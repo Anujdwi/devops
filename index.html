@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSRIT Annual Day - Student Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #4a5568;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 4px;
+            border: 1px solid #cbd5e0;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            font-size: 1em;
+            color: white;
+            background-color: #3182ce;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2b6cb0;
+        }
+        .toggle {
+            text-align: center;
+            margin-top: 1em;
+            color: #4a5568;
+        }
+        .toggle a {
+            color: #3182ce;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>MSRIT Annual Day - Student Login</h2>
+
+        <!-- Login Form -->
+        <form action="login.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Login">
+        </form>
+
+        <div class="toggle">
+            <p>New user? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+</body>
+</html>
